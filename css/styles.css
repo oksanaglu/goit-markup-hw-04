@@ -146,7 +146,7 @@ img {
 
 
 .auht-nav .link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -157,6 +157,11 @@ img {
     line-height: 1.15;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
     
 }
 
@@ -164,6 +169,7 @@ img {
 .auht-nav .link:focus {
     color: var(--accent-color);
 }
+
 
 .auht-nav {
     display: flex;
@@ -175,17 +181,29 @@ img {
     margin-left: 50px;
 }
 
-.link .auth-nav-icon {
-   
+.auth-nav-icon {
+    
     margin-right: 10px;
 
     justify-content: center;
-        text-align: center;
-        align-items: center;
+    text-align: center;
+    align-items: center;
+    color: #757575;
    
-    
    
 }
+
+.auth-nav-icon .letter {
+    fill: currentColor;
+  
+}
+
+
+.auht-nav .auth-nav-icon:hover,
+.auht-nav .auth-nav-icon:focus {
+    color: var(--accent-color);
+}
+
 
 
 /* Герой */
@@ -419,23 +437,18 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-.social-icon {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    
-    width: 206px;
-    height: 44px;
 
-    margin-left: 32px;
-    margin-right: 32px;
-  
-    
+
+
+.list-social-icon {
+    fill: currentColor;
+
 }
 
+.list-social-icon {
+    color: #AFB1B8;
 
-
+}
 
 
 .list-social-icon {
@@ -443,19 +456,38 @@ img {
     text-align: center;
     justify-content: center;
     align-items: center;
-    fill: currentColor;
+    
     width: 44px;
     height: 44px;
-    
 
 }
-
+ 
+ 
 .list-social-icon:hover,
 .list-social-icon:focus {
     background-color: #2196F3;
     border-radius: 50%;
     color: #FFFFFF;
+
 }
+
+.social-icon {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 206px;
+    height: 44px;
+
+    margin-left: 32px;
+    margin-right: 32px;
+
+   
+}
+
+
+
 
 
 /*  Клиенты  */
@@ -469,10 +501,31 @@ img {
     text-align: center;
 }
 
+.partner-icon-link {
+    padding: 0;
+}
+
+.partner-icon {
+    fill: currentColor;
+}
+
+.partner-icon {
+   
+    color: #AFB1B8;
+}
 
 .partner-link {
-    width: 100%;
-    height: 100%;
+    width: 106px;
+}
+
+.partner-icon .group-11 {
+    width: 41px;
+    height: 46.7px;
+}
+
+.partner-icon:hover,
+.partner-icon:focus {
+    color: var(--accent-color);
 }
 
 .partner-list .item {
@@ -480,16 +533,12 @@ img {
     width: 170px;
     height: 92px;
     
-        
-    
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     text-align: center;
 
     justify-content: center;
-    
-       
-        align-items: center;
+    align-items: center;
 }
 
 
@@ -501,8 +550,13 @@ img {
 
 .partner-list .item:hover,
 .partner-list .item:focus {
-    color: var(--accent-color);
+    
+    border: 1px solid var(--accent-color);
 }
+
+
+
+
 
 
 
@@ -616,12 +670,20 @@ img {
 .footer .social-icon {
     margin-left: 0;
     margin-right: 0;
+    
 }
 
-.social-icon .link:hover,
-.social-icon .link:focus {
-    color: var(--accent-color);
 
+.footer-social .list-social-icon {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+}
+
+.footer-social .list-social-icon:hover,
+.footer-social .list-social-icon:focus {
+    background-color: var(--accent-color);
+    
 }
 
 
