@@ -502,9 +502,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    
 }
 
 .partner-icon-link {
@@ -529,10 +527,7 @@ img {
     justify-content: center;
 }
 
-.partner-icon .group-11 {
-    width: 41px;
-    height: 46.7px;
-}
+
 
 .partner-icon:hover,
 .partner-icon:focus {
@@ -541,15 +536,16 @@ img {
 
 .partner-list .item {
     display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
     width: 170px;
     height: 92px;
     
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    text-align: center;
-
-    justify-content: center;
-    align-items: center;
+ 
 }
 
 
