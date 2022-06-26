@@ -442,55 +442,41 @@ img {
 
 
 
-.list-social-icon .link{
-    fill: currentColor;
 
-}
+/* Соцсети Команды*/
 
-
-.list-social-icon {
+.social-icon{
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
-    
+    text-align: center;
+}
+
+.list-social-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
-    
-}
-
-.list-social-icon .link {
     color: #AFB1B8;
-
-}
-
-.list-social-icon .link:hover,
-.list-social-icon .link:focus {
-    color: #FFFFFF;
-   
-}
- 
-.list-social-icon:hover,
-.list-social-icon:focus {
-    background-color: #2196F3;
     border-radius: 50%;
-  
+}
+
+.team-social-icon {
+    fill: currentColor;
+}
+.social-media-link:hover,
+.social-media-link:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
 
 }
 
-.social-icon {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
 
-    width: 206px;
-    height: 44px;
-
-    margin-left: 32px;
-    margin-right: 32px;
-
-}
 
 
 
@@ -502,64 +488,43 @@ img {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-    
-}
 
-.partner-icon-link {
-    padding: 0;
-}
-
-.partner-icon {
-    fill: currentColor;
-}
-
-.partner-icon {
-   
-    color: #AFB1B8;
 }
 
 .partner-link {
     display: flex;
-    width: 106px;
-    height: 60px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-
-
-.partner-icon:hover,
-.partner-icon:focus {
-    color: var(--accent-color);
-}
-
-.partner-list .item {
-    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+
+    color: #AFB1B8;
 
     width: 170px;
     height: 92px;
     
     border: 1px solid #AFB1B8;
     border-radius: 4px;
- 
 }
-
-
 
 .partner-list .item:not(:last-child) {
     margin-right: 30px;
 
 }
 
-.partner-list .item:hover,
-.partner-list .item:focus {
-    
+.partner-icon {
+    fill: currentColor;
+}
+
+.partner-link:hover,
+.partner-link:focus {
+    color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
+
+
+
+
+
 
 
 
@@ -688,12 +653,39 @@ img {
     color: #FFFFFF;
 }
 
-.footer-social .list-social-icon:hover,
-.footer-social .list-social-icon:focus {
-    background-color: var(--accent-color);
-    
+
+
+.list-social-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
 }
 
+.list-social-icon .link {
+    color: #AFB1B8;
+
+}
+
+.list-social-icon .link:hover,
+.list-social-icon .link:focus {
+    color: #FFFFFF;
+
+}
+
+
+
+.list-social-icon:hover,
+.list-social-icon:focus {
+    background-color: #2196F3;
+    border-radius: 50%;
+
+
+}
 
 
 /* Стили для Портфолио */
@@ -809,7 +801,7 @@ img {
 
 .link {
     text-decoration: none;
-    display: block;
+    display: flex;
 }
 
 .projects.link.list {
